@@ -100,6 +100,7 @@ elif [[ $option == 19 ]]; then
 server="create"
 createpage
 start1
+option==2
 
 elif [[ $option == 99 ]]; then
 exit 1
